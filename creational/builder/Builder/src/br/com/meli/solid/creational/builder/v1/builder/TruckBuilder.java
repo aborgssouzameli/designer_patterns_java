@@ -2,6 +2,7 @@ package br.com.meli.solid.creational.builder.v1.builder;
 
 import br.com.meli.solid.creational.builder.v1.car.Truck;
 import br.com.meli.solid.creational.builder.v1.component.CarType;
+import br.com.meli.solid.creational.builder.v1.component.Color;
 import br.com.meli.solid.creational.builder.v1.component.Engine;
 import br.com.meli.solid.creational.builder.v1.component.Transmission;
 import lombok.AllArgsConstructor;
@@ -16,6 +17,7 @@ public class TruckBuilder implements IBuilder {
     private int seats;
     private Transmission transmission;
     private Engine engine;
+    private Color color;
     @Override
     public void setCarType(CarType carType) {
         this.carType = carType;
@@ -36,12 +38,18 @@ public class TruckBuilder implements IBuilder {
         this.engine = engine;
     }
 
+    @Override
+    public void setColor(Color color) {
+        this.color = color;
+    }
+
     public Truck getResult() {
         return new Truck(
                 this.carType,
                 this.seats,
                 this.engine,
-                this.transmission
+                this.transmission,
+                this.color
         );
     }
 }

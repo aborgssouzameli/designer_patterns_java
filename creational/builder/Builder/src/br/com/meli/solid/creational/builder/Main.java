@@ -1,6 +1,7 @@
 package br.com.meli.solid.creational.builder;
 
 import br.com.meli.solid.creational.builder.v1.builder.CarBuilder;
+import br.com.meli.solid.creational.builder.v1.builder.IBuilder;
 import br.com.meli.solid.creational.builder.v1.builder.TruckBuilder;
 import br.com.meli.solid.creational.builder.v1.car.Truck;
 import br.com.meli.solid.creational.builder.v1.director.Director;
@@ -18,5 +19,9 @@ public class Main {
         Truck truck = truckBuilder.getResult();
         String result = String.format("\n caminhão %s produzido com sucesso" , truck.result());
         System.out.println(result);
+
+        director.constructSportCar(carBuilder);
+        resultCar = String.format("\n %s produzido com sucesso. Cor %s", carBuilder.getCarType(), carBuilder.getColor().result());
+        System.out.println(resultCar);
     }
 }
