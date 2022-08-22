@@ -1,0 +1,26 @@
+package vehicle;
+
+public class Car implements IVehicle {
+
+    private String property = "Carro";
+    @Override
+    public void startRouter() {
+        getCharge();
+        System.out.println("\nIniciando trajeto");
+    }
+
+    @Override
+    public void endRouter() {
+        System.out.println("\nFinalizando trajeto");
+    }
+
+    @Override
+    public void getCharge() {
+        System.out.println("\nAguardando passageiro");
+    }
+
+    @Override
+    public void showProperty() {
+        System.out.printf("\nTipo de veículo: %s", property);
+    }
+}

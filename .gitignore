@@ -1,0 +1,6 @@
+.idea
+*.iws
+*.iml
+*.ipr
+
+.pre-commit-config.yaml
