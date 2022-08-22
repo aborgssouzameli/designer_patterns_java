@@ -1,8 +1,7 @@
 package br.com.meli.solid.structural.adapter.adapter;
 
-import br.com.meli.solid.structural.adapter.payoneer.IPayonnerPayments;
-import br.com.meli.solid.structural.adapter.payoneer.Payonner;
-import br.com.meli.solid.structural.adapter.paypal.IPayPalPayments;
+import br.com.meli.solid.structural.adapter.gateway.payoneer.Payonner;
+import br.com.meli.solid.structural.adapter.gateway.paypal.IPayPalPayments;
 import br.com.meli.solid.structural.adapter.util.Token;
 
 public class PayonnerAdapter implements IPayPalPayments {

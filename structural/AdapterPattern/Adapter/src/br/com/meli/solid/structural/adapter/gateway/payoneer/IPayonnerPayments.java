@@ -1,4 +1,4 @@
-package br.com.meli.solid.structural.adapter.payoneer;
+package br.com.meli.solid.structural.adapter.gateway.payoneer;
 
 import br.com.meli.solid.structural.adapter.util.Token;
 

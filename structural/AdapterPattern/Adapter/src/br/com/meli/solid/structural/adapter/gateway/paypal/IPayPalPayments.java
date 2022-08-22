@@ -1,4 +1,4 @@
-package br.com.meli.solid.structural.adapter.paypal;
+package br.com.meli.solid.structural.adapter.gateway.paypal;
 
 import br.com.meli.solid.structural.adapter.util.Token;
 

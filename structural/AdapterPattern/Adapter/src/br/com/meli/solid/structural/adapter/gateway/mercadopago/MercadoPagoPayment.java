@@ -1,10 +1,9 @@
-package br.com.meli.solid.structural.adapter.paypal;
+package br.com.meli.solid.structural.adapter.gateway.mercadopago;
 
 import br.com.meli.solid.structural.adapter.util.Token;
 
-public class PayPal implements IPayPalPayments{
-
-    private String gatewayNameService = "PayPal";
+public class MercadoPagoPayment implements IMercadoPagoPayment {
+    private String gatewayNameService = "Mercado Pago";
     private Token token;
     @Override
     public Token authToken() {
@@ -12,13 +11,14 @@ public class PayPal implements IPayPalPayments{
     }
 
     @Override
-    public void paypalPayments() {
+    public void sendPayment() {
         this.token = authToken();
         System.out.printf("\nEnviando pagamentos via %s" , getGatewayNameService());
+
     }
 
     @Override
-    public void paypalReceive() {
+    public void receivePayment() {
         System.out.printf("\nRecebendo pagamentos via %s" , getGatewayNameService());
     }
 
