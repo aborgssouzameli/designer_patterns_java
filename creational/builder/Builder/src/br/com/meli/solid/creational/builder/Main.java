@@ -1,7 +1,6 @@
 package br.com.meli.solid.creational.builder;
 
 import br.com.meli.solid.creational.builder.v1.builder.CarBuilder;
-import br.com.meli.solid.creational.builder.v1.builder.IBuilder;
 import br.com.meli.solid.creational.builder.v1.builder.TruckBuilder;
 import br.com.meli.solid.creational.builder.v1.car.Truck;
 import br.com.meli.solid.creational.builder.v1.director.Director;
